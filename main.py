@@ -45,6 +45,7 @@ def remove_student():
     name = input("Enter student name: ")
     if name in students:
         del students[name]
+        print("Student removed.")
     else:
         print(f"{name} not in the dictionary")
 
@@ -104,9 +105,9 @@ while(True):
     print("Student added.")
 
   # Remove a Student
-  elif selection == "2" or selection != "2":
+  elif selection == "2":
     remove_student()
-    print("Student removed.")
+    
   
   # Add Quiz Grade for Student
   elif selection == "3":
